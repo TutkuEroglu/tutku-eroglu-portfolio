@@ -1,0 +1,125 @@
+.Home {
+	background: #fff url("../../Assets/home-bg.jpg") center center/cover no-repeat;
+	width: 100%;
+	height: 100vh;
+	padding: 7rem 10rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.info-span {
+	color: white;
+}
+
+.scrolling-text {
+	height: 50px;
+	width: 100%;
+	overflow: hidden;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.home-scroll {
+	animation-name: titleflip;
+	animation: titleflip 7.5s ease-in-out infinite;
+}
+
+ul {
+	height: 13.5em;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+li {
+	list-style-type: none;
+	height: 1em !important;
+	font-size: 3em;
+	text-transform: uppercase;
+	width: 100%;
+	color: white;
+}
+
+.image-cards-container {
+    display: flex;
+	margin-top: 100px;
+}
+
+.image-card {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+    width: 160px;
+    height: 300px;
+    transition: all 0.5s ease;
+    position: relative;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	cursor: pointer;
+}
+
+.image-card:hover {
+    width: 320px;
+    z-index: 1;
+    animation: myCard 1s ease-in-out forwards;
+}
+
+.card-span {
+	font-size: 18px;
+	color: white;
+	padding: 2px;
+}
+
+.image-cards-container .image-card:first-of-type {
+    background-image: url("https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2149126949.jpg?w=1380&t=st=1674506489~exp=1674507089~hmac=578baf7f1bffe4958108e641e21a787861e3733622e2a410545a09c43b401a25");
+}
+
+.image-cards-container .image-card:nth-of-type(2) {
+    background-image: url("https://img.freepik.com/free-photo/robot-handshake-human-background-futuristic-digital-age_53876-129770.jpg?w=1380&t=st=1674506850~exp=1674507450~hmac=14e9c8e9a96fbe6b7af7e2b9b360b0719a8b8cbc99825c741b7d3e7e1ccd9c16");
+}
+
+.image-cards-container .image-card:nth-of-type(3) {
+    background-image: url("https://img.freepik.com/free-photo/businessman-using-digital-tablet_53876-108317.jpg?w=1480&t=st=1674507027~exp=1674507627~hmac=7bb7a1252b11be270d23b5e98b655e89c11efdc4ecec64968833957ef1411918");
+}
+
+.image-cards-container .image-card:nth-of-type(4) {
+    background-image: url("https://img.freepik.com/free-photo/biometric-technology-background-with-fingerprint-scanning-system-virtual-screen-digital-remix_53876-104197.jpg?w=1380&t=st=1674507133~exp=1674507733~hmac=7df1f9cf55b7689c2ca8148a40be4da24488bfeaf088cb70b260d9571ad61e8d");
+}
+
+@keyframes myCard {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.05)
+    }
+}
+
+@keyframes titleflip {
+	0%, 20% {
+	transform: translate(0px, -12.50em);
+	}
+	20%,
+	40% {
+   transform: translate(0px, -9.375em);
+	}
+	40%,
+	60% {
+	  -webkit-transform: translate(0px, -6.44em);
+	}
+	60%,
+	80% {
+	transform: translate(0px, -3.44em);
+	}
+	80%,
+	100% {
+	transform: translate(0px, -0.315em);
+	}
+	100%,
+	0% {
+	  transform: translate(0px, -12.50em);
+	}
+  }
