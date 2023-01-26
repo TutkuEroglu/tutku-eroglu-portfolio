@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import "./index.css"
-import Home from "../../Pages/Home"
+import "./Navbar.css"
 
 const Navbar = () => {
   const [vis, setVis] = useState(false)

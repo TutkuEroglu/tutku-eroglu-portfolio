@@ -1,9 +1,17 @@
-import React from 'react'
-import "./index.css"
+import React, { useRef, useEffect } from 'react'
+import "./About.css"
 
-const About = () => {
+const About = ({scroll}) => {
+  const aboutRef = useRef(null);
+
+    useEffect(() => {
+      if (scroll) {
+        aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+  }, [scroll]);
+
   return (
-    <div className='about'>
+    <div className='about' ref={aboutRef}>
       
       <div className='about-header'>
         <span className='about-text'>Hakkımda</span>
