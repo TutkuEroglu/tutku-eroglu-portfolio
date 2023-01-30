@@ -1,5 +1,215 @@
-.Contact {
+.contact {
 	width: 100%;
 	height: 100vh;
-	padding: 7rem 10rem;
+	padding: 4rem 10rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.contact-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.social-btns {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.social-btns .btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.35s;
+	transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+	background-color: #fff;
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	margin: 0 10px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	border-radius: 28%;
+	box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+.social-btns .btn:before {
+	top: 90%;
+	left: -110%;
+	content: '';
+	width: 120%;
+	height: 120%;
+	position: absolute;
+	transform: rotate(45deg);
+	transition: all 0.35s;
+	transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+	background-color: #3b5998;
+}
+
+.social-btns .btn .bi {
+	transform: scale(0.8);
+	font-size: 38px;
+	vertical-align: middle;
+	transition: all 0.35s;
+	transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-btns .btn.instagram:before {
+	background-color: #E4405F;
+}
+
+.social-btns .btn.instagram .bi {
+	color: #E4405F;
+}
+
+.social-btns .btn.twitter:before {
+	background-color: #3CF;
+}
+
+.social-btns .btn.twitter .bi {
+	color: #3CF;
+}
+
+
+.social-btns .btn.linkedin:before {
+	background-color: #0072b1;
+}
+
+
+.social-btns .btn.linkedin .bi {
+	color: #0072b1;
+}
+
+
+.social-btns .btn.github:before {
+	background-color: #333;
+}
+
+.social-btns .btn.github .bi {
+	color: #333;
+}
+
+.social-btns .btn.envelope:before {
+	background-color: #c71610;
+}
+
+.social-btns .btn.envelope .bi {
+	color: #c71610;
+}
+
+
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+	top: -10%;
+	left: -10%;
+}
+
+.social-btns .btn:focus .bi,
+.social-btns .btn:hover .bi {
+	color: #fff;
+	transform: scale(1);
+}
+
+
+
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	margin-top: 30px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding: 1rem;
+	border-radius: 10px;
+	background-color: #f2f2f2;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-label {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+}
+
+.form-input,
+.form-textarea {
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	display: block;
+	margin-left: 0;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1rem;
+}
+
+.form-textarea {
+	height: 150px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+	outline: none;
+	border-color: #007bff;
+}
+
+.form-button {
+	background-color: #007bff;
+	color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	border: none;
+	font-size: 1.2rem;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+
+.form-button:hover {
+	background-color: #0069d9;
+}
+
+.form-button:active {
+	transform: scale(0.95);
+}
+
+
+
+.form-anim-enter {
+	transform: translateX(-100%);
+}
+
+.form-anim-enter-active {
+	transform: translateX(0);
+	transition: transform 800ms ease-in;
+}
+
+.form-anim-exit {
+	transform: translateX(0);
+}
+
+.form-anim-exit-active {
+	transform: translateX(100%);
+	transition: transform 800ms ease-out;
 }
