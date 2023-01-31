@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import "./Skills.css"
+import { MySkills } from './MySkills';
 
 const Skills = ({scroll}) => {
   const skillsRef = useRef(null);
@@ -19,19 +20,22 @@ const Skills = ({scroll}) => {
 
 
      
-    <div class="container">
-            <div class="service-box">
-                <div class="service-icon yellow">
-                    <div class="front-content">
-                        <i class="fa fa-trophy"></i>
-                        <h3>design</h3>
+    <div className="skills-container">
+        {MySkills.map(val => (
+          <div className="skills-box" key={val.id}>
+                <div className={`skills-icon ${val.skillColor}`}>
+                    <div className="skills-front-content">
+                        <img src={val.skillIcon} className="skills-open-icon" alt="" />
+                        <h3>{val.skillName}</h3>
                     </div>
                 </div>
-                <div class="service-content">
-                    <h3>design</h3>
-                    <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure</p>
+                <div className="skills-service-content">
+                    <h3>{val.skillHeader}</h3>
+                    <p>{val.skillText}</p>
                 </div>
             </div>
+        ))}
+            
     </div>
 
     </div>
