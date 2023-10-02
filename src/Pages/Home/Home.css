@@ -43,14 +43,16 @@ li {
 
 .image-cards-container {
     display: flex;
-	margin-top: 100px;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
 
 .image-card {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-    width: 160px;
+    width: 200px;
     height: 300px;
     transition: all 0.5s ease;
     position: relative;
@@ -58,6 +60,16 @@ li {
     background-repeat: no-repeat;
     background-position: center center;
 	cursor: pointer;
+}
+
+.last {
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+.first {
+	border-top-left-radius: 100px;
+	border-bottom-left-radius: 100px;
 }
 
 .image-card:hover {
@@ -70,6 +82,14 @@ li {
 	font-size: 18px;
 	color: white;
 	padding: 2px;
+}
+
+.firstSpan {
+	margin-left: 40px;
+}
+
+.lastSpan {
+	margin-right: 40px;
 }
 
 .image-cards-container .image-card:first-of-type {

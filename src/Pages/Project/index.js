@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react'
 import "./Project.css"
-import icon from "../../Assets/react.png"
 import { ProjectData } from "./ProjectData"
 
 const Project = ({scroll}) => {
@@ -26,7 +25,7 @@ const Project = ({scroll}) => {
           <div className="card-info">
             <div className='card-name'>
               <h2 className="project-name">{val.projectName}</h2>
-              <img src={val.projectIcon} className="project-icon"/>
+              <img src={val.projectIcon} className="project-icon" alt='project-icon'/>
             </div>
             <p className="project-date">{val.projectDate}</p>
             <p className='project-info'>{val.projectInfo}</p>

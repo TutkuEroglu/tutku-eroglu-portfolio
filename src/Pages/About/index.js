@@ -1,5 +1,6 @@
-import React, { useRef, useEffect } from 'react'
-import "./About.css"
+import React, { useRef, useEffect } from 'react';
+import "./About.css";
+import textData from "./textData";
 
 const About = ({scroll}) => {
   const aboutRef = useRef(null);
@@ -21,8 +22,8 @@ const About = ({scroll}) => {
         <div className='about-img'></div>
         <div className='about-me'>
           <span className='about-span'>
-            <h2 className='about-info-header'>Merhabalar, Ben Tutku EROĞLU</h2>
-            <span>Çukurova/Adana da ikamet etmekteyim.Frontend developerim ve 24 yasındayım.</span>
+            <h2 className='about-info-header'>{textData.header}</h2>
+            <span className='about-bio'>{textData.text}</span>
           </span>
         </div>
       </div>

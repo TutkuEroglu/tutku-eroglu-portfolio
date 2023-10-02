@@ -14,12 +14,10 @@ const Skills = ({scroll}) => {
   return (
     <div className='skills' ref={skillsRef}>
 
-       <div className='skills-header'>
-        <span className='skills-text'>Becerilerim</span>
-      </div>
+    <div className='skills-header'>
+      <span className='skills-text'>Becerilerim</span>
+    </div>
 
-
-     
     <div className="skills-container">
         {MySkills.map(val => (
           <div className="skills-box" key={val.id}>

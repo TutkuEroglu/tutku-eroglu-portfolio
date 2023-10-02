@@ -5,7 +5,7 @@ export const MySkills = [
         skillIcon:require("../../Assets/html.png"),
         skillColor:"color1",
         skillHeader:"design",
-        skillText:"No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure"
+        skillText:"HTML dilinde 2021 yılından beri çalışıyorum. HTML5'in sunduğu yeni özellikleri takip ediyorum ve kullanmaya çalışıyorum."
     },
     {
         id:2,
@@ -13,7 +13,7 @@ export const MySkills = [
         skillIcon:require("../../Assets/css.png"),
         skillColor:"color2",
         skillHeader:"design",
-        skillText:"No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure"
+        skillText:"CSS dilinde 2021 yılından beri çalışıyorum. Responsive tasarım optimize edebilirim ve animasyonlar oluşturabilirim. Dinamik stil değişiklikleri yapabilirim. Grid ve Flexbox yapılarına hakimim."
     },
     {
         id:3,
@@ -21,7 +21,7 @@ export const MySkills = [
         skillIcon:require("../../Assets/js.png"),
         skillColor:"color3",
         skillHeader:"design",
-        skillText:"No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure"
+        skillText:"JS dilinde 2022 yılından beri çalışıyorum. DOM manipüle etmeye aşinayım. Back-end entegrasyonlarını asenkron olarak yapabilirim. Olabildiğince okunur ve tekrar etmeyecek şekilde kod yazabilirim."
     },
     {
         id:4,
@@ -29,7 +29,7 @@ export const MySkills = [
         skillIcon:require("../../Assets/react.png"),
         skillColor:"color4",
         skillHeader:"design",
-        skillText:"No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure"
+        skillText:"React dilinde 2021 yılından beri çalışıyorum. Redux, react router biliyorum. Performans optimizasyonu sağlayabilirim. API'larla çalışabilirim. State yönetimini rahatça sağlayabilirim. React hookslarına hakimim."
     },
     {
         id:5,

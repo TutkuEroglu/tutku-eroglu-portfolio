@@ -1,45 +1,23 @@
-import React, { useState, useEffect, useRef } from 'react'
-import "./Home.css"
-import About from "../About"
+import React, { useState } from 'react';
+import "./Home.css";
+import About from "../About";
 import Skills from '../Skills';
-import Project from "../Project"
+import Project from "../Project";
 import Contact from '../Contact';
+import ScrollTop from '../../Components/ScrollTop';
 
 const Home = ({ visibility }) => {
-  const [duration, setDuration] = useState(false)
   const texts = ["Arastırmaya yatkın ✔", "Ogrenmeye istekli ✔", "Tasarım yapmayı seven ✔", "Takım oyuncusu ✔", "Frontend Developer ✔"]
   
   const [scrollAbout, setScrollAbout] = useState(false)
   const [scrollSkills, setScrollSkills] = useState(false)
   const [scrollProject, setScrollProject] = useState(false)
   const [scrollContact, setScrollContact] = useState(false)
-  
 
-  const scrollAboutPage = () => {
-    setScrollAbout(true)
+  const scrollToPage = (page) => {
+    page(true);
     setTimeout(() => {
-      setScrollAbout(false)
-    }, 500);
-  }
-
-  const scrollSkillsPage = () => {
-    setScrollSkills(true)
-    setTimeout(() => {
-      setScrollSkills(false)
-    }, 500);
-  }
-
-  const scrollProjectPage = () => {
-    setScrollProject(true)
-    setTimeout(() => {
-      setScrollProject(false)
-    }, 500);
-  }
-
-  const scrollContactPage = () => {
-    setScrollContact(true)
-    setTimeout(() => {
-      setScrollContact(false)
+      page(false);
     }, 500);
   }
 
@@ -56,17 +34,17 @@ const Home = ({ visibility }) => {
           </ul>
         </div>
           <div className="image-cards-container">
-            <div className="image-card" onClick={scrollAboutPage}>
-              <p className='card-span'>Hakkımda</p>
+            <div className="image-card first" onClick={() => scrollToPage(setScrollAbout)}>
+              <p className='card-span firstSpan'>Hakkımda</p>
             </div>
-            <div className="image-card" onClick={scrollSkillsPage}>
+            <div className="image-card" onClick={() => scrollToPage(setScrollSkills)}>
               <p className='card-span'>Becerilerim</p>
             </div>
-            <div className="image-card" onClick={scrollProjectPage}>
+            <div className="image-card" onClick={() => scrollToPage(setScrollProject)}>
               <p className='card-span'>Projelerim</p>
             </div>
-            <div className="image-card" onClick={scrollContactPage}>
-              <p className='card-span'>İletişim</p>
+            <div className="image-card last" onClick={() => scrollToPage(setScrollContact)}>
+              <p className='card-span lastSpan'>İletişim</p>
             </div>
           </div>
         
@@ -75,6 +53,7 @@ const Home = ({ visibility }) => {
       <Skills scroll={scrollSkills}/>
       <Project scroll={scrollProject}/>
       <Contact scroll={scrollContact}/>
+      <ScrollTop/>
     </>
   )
 }
