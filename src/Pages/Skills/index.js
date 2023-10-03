@@ -15,7 +15,7 @@ const Skills = ({scroll}) => {
     <div className='skills' ref={skillsRef}>
 
     <div className='skills-header'>
-      <span className='skills-text'>Becerilerim</span>
+      <span className='skills-text'>MY SKILLS</span>
     </div>
 
     <div className="skills-container">

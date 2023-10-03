@@ -15,21 +15,24 @@ const Contact = ({ scroll }) => {
   return (
     <div className="contact" ref={contactRef}>
       <div className="contact-header">
-        <span className="contact-text">İletişim</span>
+        <span className="contact-text">CONTACT ME</span>
       </div>
 
       <div className="social-btns">
-        <a className="btn instagram" href="/" target="_blank">
-          <i className="bi bi-instagram"></i>
-        </a>
-        <a className="btn linkedin" href="/">
+        <a className="btn linkedin" href="https://www.linkedin.com/in/tutku-eroglu/" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-linkedin"></i>
         </a>
-        <a className="btn twitter" href="/">
+        <a className="btn github" href="https://github.com/TutkuEroglu" target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-github"></i>
+        </a>
+        <a className="btn earmark" href="https://drive.google.com/file/d/1qwnhIv2w_Ic51RuqCjKg8BvkBET5HNr0" target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-file-earmark-person-fill"></i>
+        </a>
+        <a className="btn twitter" href="https://twitter.com/Randqua" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-twitter"></i>
         </a>
-        <a className="btn github" href="/">
-          <i className="bi bi-github"></i>
+        <a className="btn instagram" href="https://www.instagram.com/randqua" target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-instagram"></i>
         </a>
       </div>
     </div>

@@ -15,7 +15,7 @@ const Project = ({scroll}) => {
     <div className='project' ref={projectRef}>
 
       <div className='project-header'>
-        <span className='project-text'>Projelerim</span>
+        <span className='project-text'>MY PROJECTS</span>
       </div>
 
       <div className='card-element'>
@@ -29,6 +29,7 @@ const Project = ({scroll}) => {
             </div>
             <p className="project-date">{val.projectDate}</p>
             <p className='project-info'>{val.projectInfo}</p>
+            <a className='project-url' href={val.projectURL} target="_blank" rel="noopener noreferrer">Click here to see project</a>
           </div>
         </div>
       ))}

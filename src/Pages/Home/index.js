@@ -7,7 +7,7 @@ import Contact from '../Contact';
 import ScrollTop from '../../Components/ScrollTop';
 
 const Home = ({ visibility }) => {
-  const texts = ["Arastırmaya yatkın ✔", "Ogrenmeye istekli ✔", "Tasarım yapmayı seven ✔", "Takım oyuncusu ✔", "Frontend Developer ✔"]
+  const texts = ["Research-oriented ✔", "Eager to learn ✔", "Passionate about design ✔", "Team player ✔", "Frontend Developer ✔"]
   
   const [scrollAbout, setScrollAbout] = useState(false)
   const [scrollSkills, setScrollSkills] = useState(false)
@@ -24,8 +24,8 @@ const Home = ({ visibility }) => {
   return (
     <>
       <div className='Home'>
-        <h2 className='info-span'>Merhaba, Ben</h2>
-        <h1 className='info-span'>TUTKU EROĞLU</h1>
+        <h2 className='info-span'>Hi, I'm</h2>
+        <h1 className='info-span'>TUTKU EROGLU</h1>
         <div className="scrolling-text">
           <ul className="home-scroll">
             {texts.map((val, index) => (
@@ -35,16 +35,16 @@ const Home = ({ visibility }) => {
         </div>
           <div className="image-cards-container">
             <div className="image-card first" onClick={() => scrollToPage(setScrollAbout)}>
-              <p className='card-span firstSpan'>Hakkımda</p>
+              <p className='card-span firstSpan'>ABOUT ME</p>
             </div>
             <div className="image-card" onClick={() => scrollToPage(setScrollSkills)}>
-              <p className='card-span'>Becerilerim</p>
+              <p className='card-span'>MY SKILLS</p>
             </div>
             <div className="image-card" onClick={() => scrollToPage(setScrollProject)}>
-              <p className='card-span'>Projelerim</p>
+              <p className='card-span'>MY PROJECTS</p>
             </div>
             <div className="image-card last" onClick={() => scrollToPage(setScrollContact)}>
-              <p className='card-span lastSpan'>İletişim</p>
+              <p className='card-span lastSpan'>CONTACT ME</p>
             </div>
           </div>
         

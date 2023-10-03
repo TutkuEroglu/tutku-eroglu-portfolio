@@ -13,7 +13,7 @@
 }
 
 .scrolling-text {
-	height: 50px;
+	height: 65px;
 	width: 100%;
 	overflow: hidden;
 	margin: 20px 0;
@@ -63,13 +63,13 @@ li {
 }
 
 .last {
-	border-top-right-radius: 100px;
-	border-bottom-right-radius: 100px;
+	border-top-right-radius: 75px;
+	border-bottom-right-radius: 75px;
 }
 
 .first {
-	border-top-left-radius: 100px;
-	border-bottom-left-radius: 100px;
+	border-top-left-radius: 75px;
+	border-bottom-left-radius: 75px;
 }
 
 .image-card:hover {
@@ -93,19 +93,19 @@ li {
 }
 
 .image-cards-container .image-card:first-of-type {
-    background-image: url("https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2149126949.jpg?w=1380&t=st=1674506489~exp=1674507089~hmac=578baf7f1bffe4958108e641e21a787861e3733622e2a410545a09c43b401a25");
+    background-image: url("https://media.discordapp.net/attachments/1052774681591164990/1158584789427822664/tutku.jpg?ex=651cc7ab&is=651b762b&hm=af4dabf25a7dcec750791e47c025a0027097fc835c22e32e1be1e37615ab4a66&=");
 }
 
 .image-cards-container .image-card:nth-of-type(2) {
-    background-image: url("https://img.freepik.com/free-photo/robot-handshake-human-background-futuristic-digital-age_53876-129770.jpg?w=1380&t=st=1674506850~exp=1674507450~hmac=14e9c8e9a96fbe6b7af7e2b9b360b0719a8b8cbc99825c741b7d3e7e1ccd9c16");
+    background-image: url("https://cdn.discordapp.com/attachments/1052774681591164990/1158580844584255488/9dfeb8817ad82d4d6cb0bcb33a64ccfa.png?ex=651cc3fe&is=651b727e&hm=819dc2708c43a669e0f894c53ad32ddcdf49b9ac1c89533341f938c2fbfbb021&");
 }
 
 .image-cards-container .image-card:nth-of-type(3) {
-    background-image: url("https://img.freepik.com/free-photo/businessman-using-digital-tablet_53876-108317.jpg?w=1480&t=st=1674507027~exp=1674507627~hmac=7bb7a1252b11be270d23b5e98b655e89c11efdc4ecec64968833957ef1411918");
+    background-image: url("https://i.pinimg.com/564x/28/f6/2e/28f62e1d6a2bde1e6ac0ae86b7d008df.jpg");
 }
 
 .image-cards-container .image-card:nth-of-type(4) {
-    background-image: url("https://img.freepik.com/free-photo/biometric-technology-background-with-fingerprint-scanning-system-virtual-screen-digital-remix_53876-104197.jpg?w=1380&t=st=1674507133~exp=1674507733~hmac=7df1f9cf55b7689c2ca8148a40be4da24488bfeaf088cb70b260d9571ad61e8d");
+    background-image: url("https://cdn.discordapp.com/attachments/1052774681591164990/1158582140745826444/a9a893d89df5cc0ab17d4cc2eaf9d2c0.png?ex=651cc533&is=651b73b3&hm=18bfbc9a0fc0c9c761c30ddcbe1fc9436929216394bdad9022dfd56af129a0e0&");
 }
 
 @keyframes myCard {

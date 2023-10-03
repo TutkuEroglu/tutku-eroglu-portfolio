@@ -15,7 +15,7 @@ const About = ({scroll}) => {
     <div className='about' ref={aboutRef}>
       
       <div className='about-header'>
-        <span className='about-text'>Hakkımda</span>
+        <span className='about-text'>ABOUT ME</span>
       </div>
 
       <div className='about-container'>
