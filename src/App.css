@@ -2,10 +2,10 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #1F2667;
   font-weight: 400;
   font-size: 16px;
   background-color: #dfdfdf;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
-  color: #1F2667;
+  color: #333333;
 }
 
 h1 {

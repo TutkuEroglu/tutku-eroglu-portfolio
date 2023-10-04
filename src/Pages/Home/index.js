@@ -6,7 +6,7 @@ import Project from "../Project";
 import Contact from '../Contact';
 import ScrollTop from '../../Components/ScrollTop';
 
-const Home = ({ visibility }) => {
+const Home = () => {
   const texts = ["Research-oriented ✔", "Eager to learn ✔", "Passionate about design ✔", "Team player ✔", "Frontend Developer ✔"]
   
   const [scrollAbout, setScrollAbout] = useState(false)
@@ -47,7 +47,6 @@ const Home = ({ visibility }) => {
               <p className='card-span lastSpan'>CONTACT ME</p>
             </div>
           </div>
-        
       </div>
       <About scroll={scrollAbout}/>
       <Skills scroll={scrollSkills}/>
