@@ -5,35 +5,42 @@ import { MySkills } from './MySkills';
 const Skills = ({scroll}) => {
   const skillsRef = useRef(null);
   const skillsHeaderRef = useRef(null);
-  const firstArrRef = useRef(null);
-  const secondArrRef = useRef(null);
+  const skillsArrRef = useRef([]);
 
   const [visibleSkills, setVisibleSkills] = useState(false);
-  const [visibleFirst, setVisibleFirst] = useState(false);
-  const [visibleSecond, setVisibleSecond] = useState(false);
+  const [visibleArr, setVisibleArr] = useState([]);
 
     useEffect(() => {
       if (scroll) {
         skillsRef.current.scrollIntoView({ behavior: 'smooth' });
       }
 
+      setVisibleArr(new Array(MySkills.length).fill(false));
+
+      const scrollSkillsArr = () => handleScrollSkills();
+
+      const handleScrollSkills = () => {
+        const newSkillsVisibilities = skillsArrRef.current.map((ref, index) => {
+          const scrollY = window.scrollY;
+          const projectOffsetTop = ref.offsetTop;
+          console.log(scrollY)
+          console.log(projectOffsetTop)
+          return projectOffsetTop - scrollY <= 810;
+        });
+  
+        setVisibleArr(newSkillsVisibilities);
+      };
+
       const scrollSkills = () => handleScroll(skillsHeaderRef, setVisibleSkills);
-      const scrollFirstArr = () => handleScroll(firstArrRef, setVisibleFirst);
-      const scrollSecondArr = () => handleScroll(secondArrRef, setVisibleSecond);
 
       window.addEventListener('scroll', scrollSkills);
-      window.addEventListener('scroll', scrollFirstArr);
-      window.addEventListener('scroll', scrollSecondArr);
+      window.addEventListener('scroll', scrollSkillsArr);
       
       return () => {
         window.removeEventListener('scroll', scrollSkills);
-        window.removeEventListener('scroll', scrollFirstArr);
-        window.removeEventListener('scroll', scrollSecondArr);
+        window.removeEventListener('scroll', scrollSkillsArr);
       }
   }, [scroll]);
-
-  const firstArr = MySkills.slice(0, Math.ceil(MySkills.length / 2));
-  const secondArr = MySkills.slice(Math.ceil(MySkills.length / 2));
 
   const handleScroll = (currentRef, visibleRef) => {
     const scrollY = window.scrollY;
@@ -58,23 +65,8 @@ const Skills = ({scroll}) => {
     </div>
 
     <div className="skills-container">
-        {firstArr.map(val => (
-          <div className={`skills-box ${visibleFirst ? "visible" : ""}`} key={val.id} ref={firstArrRef}>
-                <div className={`skills-icon ${val.skillColor}`}>
-                    <div className="skills-front-content">
-                        <img src={val.skillIcon} className="skills-open-icon" alt="" />
-                        <h3>{val.skillName}</h3>
-                    </div>
-                </div>
-                <div className="skills-service-content">
-                    <h3>{val.skillHeader}</h3>
-                    <p>{val.skillText}</p>
-                </div>
-            </div>
-        ))}
-
-        {secondArr.map(val => (
-          <div className={`skills-box ${visibleSecond ? "visible" : ""}`} key={val.id} ref={secondArrRef}>
+        {MySkills.map((val,index) => (
+          <div className={`skills-box ${visibleArr[index] ? "visible" : ""}`} key={val.id} ref={(element) => skillsArrRef.current[index] = element}>
                 <div className={`skills-icon ${val.skillColor}`}>
                     <div className="skills-front-content">
                         <img src={val.skillIcon} className="skills-open-icon" alt="" />
