@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tutku-eroglu-portfolio/static/css/main.1ba21a4b.css",
+    "main.js": "/tutku-eroglu-portfolio/static/js/main.39f0cc69.js",
+    "static/media/pp.jpg": "/tutku-eroglu-portfolio/static/media/pp.4697dc3f1873973a1a2b.jpg",
+    "static/media/api.png": "/tutku-eroglu-portfolio/static/media/api.f4fe9fc243e0cb9fb304.png",
+    "static/media/next.png": "/tutku-eroglu-portfolio/static/media/next.9f8054a6dc0837262000.png",
+    "index.html": "/tutku-eroglu-portfolio/index.html",
+    "main.1ba21a4b.css.map": "/tutku-eroglu-portfolio/static/css/main.1ba21a4b.css.map",
+    "main.39f0cc69.js.map": "/tutku-eroglu-portfolio/static/js/main.39f0cc69.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ba21a4b.css",
+    "static/js/main.39f0cc69.js"
+  ]
+}

@@ -1,7 +1,0 @@
-const textData = {
-        header:"Hello, I'm Tutku!",
-        text:"I'm a passionate professional in the field of frontend development. I love keeping up with the dynamic and fast-paced world of technology, and I'm always motivated to learn new skills and enhance my abilities. Although I don't have prior work experience, I've been part of various projects as a crucial aspect of my ongoing journey of self-improvement. I have a strong command of fundamental web technologies such as HTML, CSS, JavaScript, and ReactJS, and I'm knowledgeable about modern frontend frameworks. Furthermore, I prioritize user experience and aim to create user-friendly and impressive websites and applications. My creative thinking skills and aesthetic sensitivity enable me to strike a perfect balance between design and coding. I also place a high value on teamwork and enjoy collaborating with others. My communication skills allow me to explain technical concepts in an understandable manner and facilitate effective communication on projects.I'm eager to grow and contribute alongside my future employer. My passion for frontend development and my hunger for learning drive me to become a better developer every day.If you'd like to get in touch with me or collaborate, please connect with me on LinkedIn. I'm interested in new opportunities and projects! Thank you.",
-    }
-
-
-export default textData;
