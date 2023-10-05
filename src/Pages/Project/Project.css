@@ -1,7 +1,8 @@
 .project {
 	width: 100%;
 	height: 100vh;
-	padding: 6rem 6rem;
+	padding: 7rem 10rem;
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 }
@@ -118,4 +119,53 @@
   .visible {
 	opacity: 1;
 	transform: translateY(0);
+ }
+
+ @media (max-width: 768px) {
+	.project {
+		padding: 2rem 0;
+		margin-top: 20rem;
+	}
+	.project-header {
+		font-size: 26px;
+	}
+	.card-element {
+		justify-content: center;
+		flex-direction: row;
+	}
+	.card {
+		width: 155px;
+		max-width: 150px;
+		height: 100px;
+		margin: 65px 10px 0 10px;
+	  }
+	  .card-info {
+		height: 50px;
+		padding: 6px;
+	  }
+	  .card:hover .card-info {
+		top: 0;
+		max-height: 200px;
+		border-radius: 8px;
+	  }
+	  .project-name {
+		font-size: 14px;
+	  }
+	  .project-date {
+		margin: 0;
+		font-size: 10px;
+	  }
+	  .project-icon {
+		max-height: 24px;
+		max-width: 24px;
+		color: transparent;
+	  }
+	  .project-info {
+		margin: 0;
+		font-size: 14px;
+	  }
+	  .project-url {
+		margin: 0;
+		font-size: 14px;
+	  }
  }

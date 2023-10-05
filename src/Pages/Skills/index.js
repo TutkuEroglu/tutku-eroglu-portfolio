@@ -25,7 +25,7 @@ const Skills = ({scroll}) => {
           const projectOffsetTop = ref.offsetTop;
           console.log(scrollY)
           console.log(projectOffsetTop)
-          return projectOffsetTop - scrollY <= 810;
+          return projectOffsetTop - scrollY <= 1000;
         });
   
         setVisibleArr(newSkillsVisibilities);

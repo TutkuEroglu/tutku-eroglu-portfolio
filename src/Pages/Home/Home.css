@@ -4,7 +4,9 @@
     padding: 7rem 10rem;
     display: flex;
     align-items: center;
+	justify-content: center;
     flex-direction: column;
+	box-sizing: border-box;
 }
 
 .info-span {
@@ -141,4 +143,78 @@ li {
 	0% {
 	  transform: translate(0px, -12.50em);
 	}
+  }
+
+  @media (max-width: 768px) {
+	.Home {
+		padding: 2rem;
+	}
+	.info-span {
+		font-size: 26px;
+	}
+	.scrolling-text {
+		margin: 20px 0;
+		height: 20px;
+	}
+	li {
+		font-size: 20px;
+	}
+	.image-cards-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: 70%;
+	}
+	.image-card {
+		width: 200px;
+		height: 250px;
+	}
+	.image-card:hover {
+		width: 250px;
+	}
+	.first {
+		border-radius: 0;
+	}
+	.last {
+		border-radius: 0;
+	}
+	.firstSpan {
+		margin: 0;
+	}
+	.lastSpan {
+		margin: 0;
+	}
+	.card-span {
+		font-size: 16px;
+		color: rgb(255, 255, 255);
+		font-weight: 600;
+		padding: 0px;
+	}
+	
+	@keyframes titleflip {
+		0%, 20% {
+		transform: translate(0px, -85px);
+		}
+		20%,
+		40% {
+	   transform: translate(0px, -65px);
+		}
+		40%,
+		60% {
+		  -webkit-transform: translate(0px, -45px);
+		}
+		60%,
+		80% {
+		transform: translate(0px, -25px);
+		}
+		80%,
+		100% {
+		transform: translate(0px, -5px);
+		}
+		100%,
+		0% {
+		  transform: translate(0px, -85px);
+		}
+	  }
   }
