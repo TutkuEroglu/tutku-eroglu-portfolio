@@ -1,5 +1,14 @@
 export const ProjectData = [
     {
+        id:0,
+        projectImg:"https://static.vecteezy.com/system/resources/previews/019/197/110/non_2x/internet-service-for-book-and-buy-bus-ticket-travel-and-tourism-concept-tourist-planning-trip-online-passengers-buying-tickets-for-bus-in-mobile-app-design-vector.jpg",
+        projectName:"Bus Ticket Buy App",
+        projectIcon:require("../../Assets/next.png"),
+        projectDate:"October 2023",
+        projectInfo:"I designed bus ticket system with my own data, i used NextJS, Typescript, Css",
+        projectURL:"https://github.com/TutkuEroglu/bus-ticket-app"
+    },
+    {
         id:1,
         projectImg:"https://www.coinmama.com/blog/wp-content/uploads/2019/04/Selling-Bitcoin.png",
         projectName:"Crypto Game",
@@ -52,6 +61,6 @@ export const ProjectData = [
         projectIcon:require("../../Assets/node.png"),
         projectDate:"September 2022",
         projectInfo:"I designed twitter's homepage, notifications, profile pages with React, Redux, CSS, HTML and NodeJS & MYSQL",
-        projectURL:""
+        projectURL:"https://github.com/TutkuEroglu/CloneTwitterwMySQL"
     },
 ]
